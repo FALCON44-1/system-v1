@@ -480,7 +480,7 @@ client.on('message', async msg => {
             if (!member.bannable) return msg.channel.send(`**The member role is higher than me**`);
 
             await member.ban({ reason: `He/She just got bannned` })
-            normal.channel.send(`**${member.user.username} Has been BANNNED ✈**`)
+            msg.channel.send(`**${member.user.username} Has been BANNNED ✈**`)
         }
     })
     //kick
